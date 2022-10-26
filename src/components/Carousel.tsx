@@ -10,7 +10,7 @@ const Carousel = () => {
 
     function usePrevious(state: ComponentState) {
       const [prevCount, setPrevCount] = useState(count);
-      const [trend, setTrend] = useState(null);
+      const [trend, setTrend] = useState(null || "");
       if (prevCount !== count) {
         setPrevCount(count);
         setTrend(count > prevCount ? "increasing" : "decreasing");
