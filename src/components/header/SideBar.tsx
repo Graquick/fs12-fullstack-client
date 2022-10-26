@@ -1,6 +1,7 @@
 import { ComponentState } from 'react';
 import {motion, AnimatePresence} from 'framer-motion'
 import { Link } from "react-router-dom";
+import SideBarLinks from './SideBarLinks';
 
 const sideBarVariants = {
   initial: {
@@ -57,7 +58,7 @@ const SideBar = ({isOpen}: ComponentState) => {
             initial="initial"
             animate="animate"
             exit="initial"
-            className="fixed bg-white/50 text-[#b9b9b9] text-3xl flex flex-col pt-24 pl-12 gap-8 backdrop-blur-sm w-[250px] h-screen top-0 right-0 mlg:hidden mlg:invisible"
+            className="fixed bg-white shadow-sm text-[#b9b9b9] text-3xl flex flex-col pt-24 pl-12 gap-8 w-[250px] h-screen top-0 right-0 mlg:hidden mlg:invisible"
           >
             {navLinks.map((link) => {
               return (
@@ -71,6 +72,7 @@ const SideBar = ({isOpen}: ComponentState) => {
                 </motion.li>
               );
             })}
+            <SideBarLinks />
           </motion.ul>
         )}
       </AnimatePresence>
