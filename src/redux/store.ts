@@ -1,7 +1,11 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import carouselSlice from "features/carousel/carouselSlice";
+
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    carousel: carouselSlice,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;
