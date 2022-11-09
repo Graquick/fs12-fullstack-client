@@ -21,7 +21,7 @@ const NavLinks = () => {
   return (
     <ul className="invisible hidden gap-[45px] items-center mlg:visible mlg:flex">
       {navLinks.map((link) => {
-        return <li>{link.content}</li>;
+        return <li key={link.id}>{link.content}</li>;
       })}
     </ul>
   );

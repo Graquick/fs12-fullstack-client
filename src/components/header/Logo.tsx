@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Logo = () => {
   return (
     <Link to="/">
-      <h1 className="text-2xl text-black cursor-pointer">apparell.</h1>
+      <h1 className="text-xl font-light cursor-pointer text-slate-100">apparell.</h1>
     </Link>
   );
 };

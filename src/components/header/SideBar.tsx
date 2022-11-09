@@ -58,11 +58,12 @@ const SideBar = ({isOpen}: ComponentState) => {
             initial="initial"
             animate="animate"
             exit="initial"
-            className="fixed bg-white shadow-sm text-[#b9b9b9] text-3xl flex flex-col pt-24 pl-12 gap-8 w-[250px] h-screen top-0 right-0 mlg:hidden mlg:invisible"
+            className="fixed bg-white/80 backdrop-blur-md shadow-sm text-[#5e5e5e] text-3xl flex flex-col pt-24 pl-12 gap-8 w-[300px] h-screen top-0 -right-12 mlg:hidden mlg:invisible"
           >
             {navLinks.map((link) => {
               return (
                 <motion.li
+                  key={link.id}
                   variants={sideBarLinks}
                   whileHover={{scale: 1.15}}
                   whileTap={{scale: .75}}

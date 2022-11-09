@@ -31,7 +31,7 @@ const Nav = () => {
         onClick={handleButton}
         className="absolute top-0 bottom-0 z-20 my-auto right-4 mlg:hidden mlg:invisible"
       >
-        {isOpen ? <Close /> : <Menu />}
+        {isOpen ? <Close /> : <Menu className="text-slate-200" />}
       </motion.button>
       <SideBar isOpen={isOpen} />
       <NavLinks />

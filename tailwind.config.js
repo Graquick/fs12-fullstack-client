@@ -53,5 +53,4 @@ module.exports = {
       didot: "GFS Didot, serif",
     },
   },
-  plugins: [require("daisyui")],
 };
