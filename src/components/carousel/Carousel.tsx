@@ -20,6 +20,8 @@ const Carousel = () => {
     // setTrend(index > prevCount ? 1 : -1);
   }
 
+  // 1st try MongoDB connection
+
   let colors = [
     "bg-red-400",
     "bg-sky-400",
